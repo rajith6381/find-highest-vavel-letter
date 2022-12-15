@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="out"></h1>
+    <script>
+        var name3 = prompt("enter name");
+        var name4 = prompt("enter name");
+        function Vavel(name1, name2) {
+
+            var sum1 = 0;
+            for (k = 0; k < name1.length; k++) {
+
+                if (name1[k] == "a" || name1[k] == "e" || name1[k] == "i" || name1[k] == "o" || name1[k] == "u") {
+
+                    sum1 += 1;
+
+                }
+
+            }
+
+            var sum2 = 0;
+            for (k = 0; k < name2.length; k++) {
+
+                if (name2[k] == "a" || name2[k] == "e" || name2[k] == "i" || name2[k] == "o" || name2[k] == "u") {
+
+                    sum2 += 1
+
+                }
+
+            }
+
+            if (sum1 < sum2) {
+                var ans = document.getElementById("out").innerHTML = name2
+            } else {
+                var ans = document.getElementById("out").innerHTML = name1
+            }
+
+        }
+
+        Vavel(name3, name4)
+
+    </script>
+</body>
+
+</html>
